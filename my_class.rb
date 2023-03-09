@@ -1,12 +1,12 @@
 require_relative './module_enumerable'
 
 class MyList
-	include MyEnumerable
-  def initialize (*list)
-		@list = list
-	end
+  include MyEnumerable
+  def initialize(*list)
+    @list = list
+  end
 
-	def each(&block)
+  def each(&block)
     @list.each(&block)
   end
 end
